@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
     <link rel="stylesheet" href="CSS/formulario.css">
+    <script src="JS/formulario.js" defer></script>
 </head>
 
 <body>
@@ -20,61 +21,51 @@
 
     <section id="formulario">
         <h2>Formulario de Registro</h2>
-    <form action="">
+        <form id="formRegistro" action="">
 
-    <fieldset>
-        <legend>Información Personal</legend>
+            <fieldset>
+                <legend>Información Personal</legend>
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" minlength="3" maxlength="50" required>
-    
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
-    
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" id="contraseña" name="contraseña"        required>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" minlength="3" maxlength="50" required>
+            
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" required>
 
-        <label for="pais">País:</label>
-        <select id="pais" name="pais" required>
+                <label for="pais">País:</label>
+                <select id="pais" name="pais" required>
+                    <option value="" selected disabled>Seleccione una opción</option> 
+                    <option value="colombia">Colombia</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="chile">Chile</option>
+                    <option value="mexico">México</option>
+                    <option value="peru">Perú</option>
+                    <option value="ecuador">Ecuador</option>
+                </select>
 
-            <option value="" selected disabled>Seleccione una opción</option> 
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
 
-            <option value="colombia">Colombia</option>
+                <label for="fecha_nacimiento">Fecha Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
 
-            <option value="argentina">Argentina</option>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
 
-            <option value="chile">Chile</option>
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino">
 
-            <option value="mexico">México</option>
+                <label for="otro">Otro:</label>
+                <input type="radio" id="otro" name="genero" value="otro">
+            </fieldset>
 
-            <option value="peru">Perú</option>
+            <input type="reset" value="Limpiar">
+            <button type="button" id="btnRegistrar">Registrar</button>
 
-            <option value="ecuador">Ecuador</option>
-
-        </select>
-
-        <label for="telefono">Telefono:</label>
-        <input type="tel"  id="telefono" name="telefono" required>
-
-        <label for="fecha_nacimiento">Fecha Nacimiento:</label>
-        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
-
-        <label for="masculino">Masculino</label>
-        <input type="radio" id="masculino" name="genero" value="masculino">
-
-        <label for="femenino">Femenino</label>
-        <input type="radio" id="femenino" name="genero" value="femenino">
-
-        <label for="otro">Otro:</label>
-        <input type="radio" id="otro" name="genero" value="otro">
-    
-    </fieldset>
-
-        <input type="reset" value="Limpiar">
-
-        <button type="button">Registrar</button>
-
-    </form>
+        </form>
     </section>
 
     <section id="contacto">
