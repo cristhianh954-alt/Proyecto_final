@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Tienda | Catálogo</title>
+    <title>Vasos de Postres | Catálogo</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="JS/productos.js" defer></script>
     <script src="JS/app.js" defer></script>
@@ -11,32 +11,57 @@
 
 <body>
 
+    <!-- Encabezado -->
     <header>
-        <h1>Mi Tienda</h1>
-        <p aria-live="polite">Carrito: <span id="contador">0</span></p>
+        <div class="logo">
+            <img src="IMG/Logo.jpeg" alt="Logo Vasos de Postres">
+        </div>
 
-            <nav>
-            <a href="formulario.html">Formulario</a>
-            </nav>
+        <nav>
+            <a href="#inicio" class="activo">Inicio</a>
+            <a href="#postres">Nuestros Postres</a>
+            <a href="#sobre-nosotros">Nosotros</a>
+            <a href="#carrito">Cómo Pedir</a>
+            <a href="formulario.html">Contacto</a>
+        </nav>
+
+        <p aria-live="polite" class="contador-carrito">🛒 <span id="contador">0</span></p>
     </header>
 
-    <div class="contenido">
+    <!-- Portada -->
+    <section class="portada" id="inicio">
+        <div class="portada-texto">
+            <h1>DULCE TENTACIÓN EN VASO</h1>
+            <p>Postres individuales deliciosos, frescos y al mejor precio (Desde $6.000 COP)</p>
+            <a class="boton-pedido" href="https://wa.me/57XXXXXXXXXX">¡Haz tu pedido por WhatsApp!</a>
+        </div>
+        <div class="portada-imagen">
+            <img src="IMG/Portada2.jpeg" alt="Vasos de postres">
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="productos-seccion" id="postres">
+        <h2>NUESTRAS DELICIAS</h2>
         <main id="productos" class="area-productos" aria-label="Lista de productos">
         </main>
+    </section>
 
-        <!-- Contenido complementario -->
-        <aside class="carrito" aria-label="Carrito de compras">
-            <h2>Tu carrito</h2>
-            <ul id="lista-carrito"></ul>
-            <p class="total" aria-live="polite">Total: <span id="total">$0</span></p>
-            <button type="button" id="vaciar">Limpiar Carrito</button>
-        </aside>
-    </div>
+    <!-- Carrito -->
+    <aside class="carrito" id="carrito" aria-label="Carrito de compras">
+        <h2>Tu carrito</h2>
+        <ul id="lista-carrito"></ul>
+        <p class="total" aria-live="polite">Total: <span id="total">$0</span></p>
+        <button type="button" id="vaciar">Limpiar Carrito</button>
+    </aside>
 
     <footer class="footer">
-        <p>&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
+        <section class="sobre-nosotros" id="sobre-nosotros">
+ 
+        </section>
+
+        <p>&copy; 2026 Vasos de Postres. Todos los derechos reservados.</p>
     </footer>
 
 </body>
-
 </html>
