@@ -3,9 +3,9 @@ function mostrarNombre() {
 const nombre = sessionStorage.getItem("nombre"); // lee de la bodega
 
 if (nombre === null) {
-        document.getElementById("saludo").textContent = "No hay ningún nombre guardado.";
+        document.getElementById("saludo").textContent = "¡Hola!";
     } else {
-        document.getElementById("saludo").textContent = "Hola, " + nombre;
+        document.getElementById("saludo").textContent = "¡Hola, " + nombre + "!";
     }
 }
 
