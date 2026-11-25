@@ -329,21 +329,3 @@ nav a.activo {
   }
 }
 
-header nav {
-  display: flex;
-  gap: 0.75rem;
-  align-items: center;
-}
-
-.btn-nosotros {
-  background-color: #2f5d50;
-  color: #ffffff;
-  padding: 0.45rem 0.9rem;
-  border-radius: 0.5rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.btn-nosotros:hover {
-  background-color: #23473d;
-}
