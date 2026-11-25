@@ -38,7 +38,7 @@ const productos = {
 
     P006: {
         nombre: "Doble Chocolate con Brownie",
-        precio: 80000,
+        precio: 8000,
         descripción: "Diseño vertical que reduce la tensión en la muñeca",
         imagen: "IMG/Doble Chocolate.jpeg"    
     }
