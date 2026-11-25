@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda | Catálogo</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/productos.js" defer></script>
+    <script src="JS/app.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi Tienda</h1>
+        <p aria-live="polite">Carrito: <span id="contador">0</span></p>
+
+            <nav>
+            <a href="formulario.html">Formulario</a>
+            </nav>
+    </header>
+
+    <div class="contenido">
+        <main id="productos" class="area-productos" aria-label="Lista de productos">
+        </main>
+
+        <!-- Contenido complementario -->
+        <aside class="carrito" aria-label="Carrito de compras">
+            <h2>Tu carrito</h2>
+            <ul id="lista-carrito"></ul>
+            <p class="total" aria-live="polite">Total: <span id="total">$0</span></p>
+            <button type="button" id="vaciar">Limpiar Carrito</button>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

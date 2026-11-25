@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/formulario.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Index</a>
+            <a href="02_formulario.html">Formulario</a>
+            <a href="03_tienda.html">Tienda</a>
+            <a href="04_descuentos.html">Descuentos</a>
+            <a href="05_calculadora.html">Calculadora</a>
+            <a href="06_tabla.html">Tabla de multiplicar</a>
+            <a href="07_PiedraPapelTijera.html">Piedra Papel o Tijera</a>
+            <a href="08_juegorandom.html">Adivina el número</a>
+        </nav>
+    </header>
+
+    <section id="formulario">
+        <h2>Formulario de Registro</h2>
+    <form action="">
+
+    <fieldset>
+        <legend>Información Personal</legend>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" minlength="3" maxlength="50" required>
+    
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+    
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña"        required>
+
+        <label for="telefono">Telefono:</label>
+        <input type="tel"  id="telefono" name="telefono" required>
+
+        <label for="fecha_nacimiento">Fecha Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+
+        <label for="rango">Aura:</label>
+        <input type="range" id="rango" name="rango" min="0" max="100">
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color">
+
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+
+        <label for="otro">Otro:</label>
+        <input type="radio" id="otro" name="genero" value="otro">
+    
+    </fieldset>
+
+    <fieldset>
+        <legend>Intereses</legend>
+
+        <label for="programacion">Programación</label>
+        <input type="checkbox" id="programacion" name="intereses" value="programacion">
+
+        <label for="basesDatos">Bases de datos</label>
+        <input type="checkbox" id="basesDatos" name="intereses" value="bases-datos">
+
+        <label for="redes">Redes</label>
+        <input type="checkbox" id="redes" name="intereses" value="redes">
+            
+        <label for="ia">Inteligencia Artificial</label>
+        <input type="checkbox" id="ia" name="intereses" value="inteligencia-artificial">
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Selección</legend>
+
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+
+            <option value="" selected disabled>Seleccione una opción</option> 
+
+            <option value="colombia">Colombia</option>
+
+            <option value="argentina">Argentina</option>
+
+            <option value="chile">Chile</option>
+
+            <option value="mexico">México</option>
+
+            <option value="peru">Perú</option>
+
+            <option value="ecuador">Ecuador</option>
+
+        </select>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea
+            id="comentarios"
+            name="comentarios"
+            rows="10"
+            cols="20"
+            placeholder="Escriba sus comentarios aquí..."
+            minlength="10"
+            maxlength="500"
+            required
+        ></textarea>
+    </fieldset>
+    
+        <input type="file">
+
+        <input type="reset" value="Limpiar">
+
+        <button type="button">Registrar</button>
+
+    </form>
+    </section>
+
+    
+
+    <section id="contacto">
+        <p>Puede contactarnos a través del siguiente correo: </p>
+        <a href="mailto:info@miempresa.com">info@miempresa.com</a>
+    </section>
+
+    <footer>
+        <p>Derechos reservados &copy; 2026</p>
+        <a href="https://www.google.com" target="_blank">Ir a Google</a>
+    </footer>
+
+</body>
+</html>
