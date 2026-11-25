@@ -12,11 +12,20 @@
 
 <body>
 
+    <!-- Barra superior: saludo, cerrar sesión, registrarse e iniciar sesión -->
+    <div class="barra-superior">
+        <div class="sesion-usuario">
+            <p id="saludo">¡Hola!</p>
+            <button id="btn-borrar-todo">Cerrar sesión</button>
+        </div>
+
+        <div class="sesion-enlaces">
+            <a href="formulario.html" class="enlace-sesion">Registrarse</a>
+            <a href="login.html" class="enlace-sesion destacado">Iniciar Sesión</a>
+        </div>
+    </div>
+
     <!-- Encabezado -->
-
-    <p id="saludo">¡Hola!</p>
-    <button id="btn-borrar-todo">Cerrar sesión</button>
-
     <header>
         <div class="logo">
             <img src="IMG/logo.jpeg" alt="Logo Vasos de Postres">
@@ -25,10 +34,8 @@
         <nav>
             <a href="#inicio" class="activo">Inicio</a>
             <a href="#postres">Nuestros Postres</a>
-            <a href="nosotros.html" class="btn-nosotros">Sobre Nosotros</a>
+            <a href="nosotros.html">Sobre Nosotros</a>
             <a href="#carrito">Cómo Pedir</a>
-            <a href="formulario.html">Registrarse</a>
-            <a href="login.html">Iniciar Sesión</a>
         </nav>
 
         <p aria-live="polite" class="contador-carrito">🛒 <span id="contador">0</span></p>
@@ -62,7 +69,6 @@
     </aside>
 
     <footer class="footer">
-
         <p>&copy; 2026 Vasos de Postres. Todos los derechos reservados.</p>
     </footer>
 

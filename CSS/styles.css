@@ -27,6 +27,63 @@ img {
   display: block;
 }
 
+/* Barra superior (saludo, cerrar sesión, registrarse e iniciar sesión) */
+.barra-superior {
+  background-color: #f7ecd6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 5% 0 5%;
+}
+
+.sesion-usuario {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#saludo {
+  font-weight: 600;
+  color: #4a1f12;
+}
+
+#btn-borrar-todo,
+.enlace-sesion {
+  color: #4a1f12;
+  background-color: transparent;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+  border: 2px solid #4a1f12;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+#btn-borrar-todo:hover,
+.enlace-sesion:hover {
+  background-color: #4a1f12;
+  color: #ffffff;
+}
+
+.sesion-enlaces {
+  display: flex;
+  gap: 0.75rem;
+  margin-left: auto;
+}
+
+.enlace-sesion.destacado {
+  background-color: #4a1f12;
+  color: #ffffff;
+}
+
+.enlace-sesion.destacado:hover {
+  background-color: #2b1d1a;
+}
+
 /* Encabezado */
 header {
   background-color: #f7ecd6;
@@ -114,7 +171,6 @@ nav a.activo {
   height: 300px;
   object-fit: cover;
 }
-
 
 /* Productos */
 .productos-seccion {
@@ -297,7 +353,7 @@ nav a.activo {
   }
 
   .nombre {
-  min-height: 3.2rem;
+    min-height: 3.2rem;
   }
 }
 
@@ -320,7 +376,7 @@ nav a.activo {
     height: 340px;
   }
 
-.area-productos {
+  .area-productos {
     grid-template-columns: repeat(6, 1fr);
   }
 
@@ -328,4 +384,3 @@ nav a.activo {
     height: 130px;
   }
 }
-
