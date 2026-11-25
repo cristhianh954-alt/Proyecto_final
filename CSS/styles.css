@@ -295,6 +295,10 @@ nav a.activo {
   .mision-vision div {
     flex: 1;
   }
+
+  .nombre {
+  min-height: 3.2rem;
+  }
 }
 
 /* Escritorio */
